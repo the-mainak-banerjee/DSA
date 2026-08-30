@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  background-color: rgb(36, 34, 37);
+}
+
+p{
+    color: rgb(211, 205, 205);
+    font-size: 18px;
+}
