@@ -9,9 +9,10 @@ body {
   gap: 16px;
 }
 
-h2, p{
-    margin: 0;
-    padding: 0;
+h2,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 p {
