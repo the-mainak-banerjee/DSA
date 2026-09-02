@@ -78,3 +78,19 @@ In next iteration we don't need to consider that element so we will start from t
 So the outer loop will run from `i=0` to `i<n-1`
 
 And the inner loop will run from `j=i+1` to `j<n`.
+
+### Insertion Sort
+
+In this sorting algorithm we need to follow the below steps:
+
+First we need to consider the first element of the array is sorted and the rest of the array is unsorted.
+
+Than we will compare each element of the unsorted array with each element of its previous sorted array. So our outer loop will start from `i=1` till `i<n`;
+
+If the previous element of the sorted array is greater than the current element of the unsorted array than we will move the previous element one step ahead. And our inner loop condition will be:
+
+`while(arr[prevIndex] > currentElement && prev > 0)` 
+
+And the base case will be `prev--`, so that it can compare with alll the elements of the sorted array.
+
+The moment where we find the previous element is less than the current element we will break the inner loop and placed the current element in the position `prev + 1`
