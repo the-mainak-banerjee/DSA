@@ -39,7 +39,7 @@ For this we will use while loop. The base condition of the loop will be when rig
 
 ### Bubble Sort
 
-We cna use this technique to sort an array. Lets say we want to sort an array in increment order.
+We can use this technique to sort an array. Lets say we want to sort an array in increment order.
 
 Here are the steps we need to follow.
 
@@ -60,3 +60,21 @@ So the iteration will run `n-1` times that is `4-1=3` times.
 And in each iteration the compare will happen `n-1, n-2, n-3 ... 1`.
 
 So the outer loop will run till `n-1` times and the inner loop will learn `n-(i+1)` times.
+
+### Selection Sort
+
+This is another algorithm to sort an array. 
+
+We need to go throgh the each element of an array one by one and find the minimum value and than placed it to the start of the array.
+
+If the length of my array is `n` then we will do this till `n-1` times, as we don't need to consider the last item because in the process of sorting other items the larget item will automatically placed at the end of the array.
+
+In each iteration we will start the process of finding the minimum value from the `i+1` position. Here is why:
+
+In first iteration we will find the minimum item of the whole array and place it in th first position.
+
+In next iteration we don't need to consider that element so we will start from the second position till the last postition to find the minimum.
+
+So the outer loop will run from `i=0` to `i<n-1`
+
+And the inner loop will run from `j=i+1` to `j<n`.
