@@ -47,7 +47,7 @@ We need to compare each pair from the start of the array and check if the first 
 
 Continue this till the last 2 pair of the array in the firt iteration.
 
-At the end of first iteration we will see the larget element of the array reacges the end.
+At the end of first iteration we will see the larget element of the array reaches the end.
 
 Now again we need to continue the same comparision. But this time we will skip the last pair as the last element alreday placed in its position.
 
@@ -94,3 +94,51 @@ If the previous element of the sorted array is greater than the current element 
 And the base case will be `prev--`, so that it can compare with alll the elements of the sorted array.
 
 The moment where we find the previous element is less than the current element we will break the inner loop and placed the current element in the position `prev + 1`
+
+
+### Merge Sort
+
+This is a divide and conquer algorithm.
+
+It actually break the array in two parts till it creates array with each single element.
+
+Than while returning it will keep merging those arrays by sorting them. 
+
+For merging two sorting arrays it uses as helper function.
+
+Lets take this example
+
+`[8,4,9,5]`
+
+This will become
+
+`[8,4] and [9,5]`
+
+Then we will call the same function for both of them recursively.
+
+So now `[8,4]` will become
+
+`[8] and [4]`
+
+And `[9,5]` will become
+
+`[9] and [5]`
+
+Now this is the base case. Once we reach one element per call we will break the recursion loop and return the array as it is.
+
+Then we will merge these two array in a sorting order by using the helper function.
+
+So now we will have:
+
+`[4,8] and [5,9]`
+
+At the end we will merge those two sorted arrays as well using the helper function
+
+So the result will be:
+
+`[4,5,8,9]`
+
+Now the helper function will take two pointers `i` and `j` for two arrays. And compare the elements from each array one by one. The smaller one will be pushed to the result array and the pointer will move to the next index.
+
+This loop will continue till any one index reach the end of the array.
+
