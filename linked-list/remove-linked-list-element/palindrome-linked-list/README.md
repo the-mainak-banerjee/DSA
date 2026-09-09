@@ -2,6 +2,8 @@
 
 Given the head of a linked list and an integer `val`, remove all the nodes of the linked list that has Node.`val == val`, and return the new head.
 
+### Solution
+
 - To solve this problem we need to keep a track of the previous element by using a `prev` pointer.
 - Then we need to check if the next of the `prev` points to the element which we need to remove.
 - If yes then we will make the next of the `prev` points to `prev.next.next`.
@@ -23,3 +25,8 @@ At the end we will return the `Sentinal Node` as it will refer to our original h
 In the context of Military Sentinal refers to a soldier stationed to keep watch.
 
 Similary in linked list context sentinal node will keep watch to the head of the list.
+
+### Leet Code reference
+
+- Problem Number 203
+- [Problem Link](https://leetcode.com/problems/remove-linked-list-elements/description/)
