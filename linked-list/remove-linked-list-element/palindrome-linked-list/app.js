@@ -16,5 +16,5 @@ function removeElements(head, val) {
     }
   }
 
-  return sentinalNode;
+  return sentinalNode.next;
 }
