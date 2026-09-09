@@ -6,8 +6,8 @@ function ListNode(val, next) {
 function removeElements(head, val) {
   let sentinalNode = new ListNode();
   sentinalNode.next = head;
-
   let prev = sentinalNode;
+  
   while (prev && prev.next) {
     if (prev.next.val === val) {
       prev.next = prev.next.next;

@@ -18,7 +18,7 @@ To handle this we need to create and maintain a new node, which will be called `
 - The next of the `Sentinel Node` points to the head and we will make  `prev = sentinel node` at the start.
 - Now when the loop start `prev.next` will refer to the first node which is head. And if the value of head matches with `val` than we can easily delete the head by changing the value of `prev.next` to `prev.next.next` as mentioned our approch above.
 
-At the end we will return the `Sentinal Node` as it will refer to our original head (in case of head does not match with the `val`) or new head(in case of head matches with the `val`)
+At the end we will return the `next` pointer of `Sentinal Node` as it will refer to our original head (in case of head does not match with the `val`) or new head(in case of head matches with the `val`)
 
 ### Sentinal 
 
