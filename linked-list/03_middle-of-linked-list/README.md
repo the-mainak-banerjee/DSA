@@ -9,3 +9,9 @@ When the size of linkedlist is even:
 
 When the size of linkedlist is odd:
 - We need to break the loop when our `fast.next` points to null. At that time `slow` pointer reaches to the middle element.
+
+
+### Leet Code reference
+
+- Problem Number 876
+- [Problem Link](https://leetcode.com/problems/middle-of-the-linked-list/description/)

@@ -23,3 +23,8 @@ Inside the loop if we directly change the `next` pointer to of the `curr` to `pr
 - Shift the `curr` pointer to next element on the list which is stored in `temp`. `curr = temp`
 
 At the end we will return the `prev` element as it will store the head.
+
+### Leet Code reference
+
+- Problem Number 206
+- [Problem Link](https://leetcode.com/problems/reverse-linked-list/)

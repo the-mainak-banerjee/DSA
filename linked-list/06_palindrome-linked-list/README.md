@@ -27,3 +27,8 @@ In step 3, we need to maintain two points:
 - `firstList` which will start from head and travel through the first part of the list.
 - `secondList` which will start from the tail of the linked list and which was stored in `prev` variable at the end of step 2.
 - Then we need compare each element of the first half with its subsequent second half element. If all of them match than it is a palindrome, else it is not.
+
+### Leet Code reference
+
+- Problem Number 234
+- [Problem Link](https://leetcode.com/problems/palindrome-linked-list/description/)

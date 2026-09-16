@@ -16,3 +16,7 @@ We can use a hash map or hash table to solve this. Because finding an element fr
 - If we found any element of headA in hash table then that is our intersection.
 - Or else we will return null.
 
+### Leet Code reference
+
+- Problem Number 160
+- [Problem Link](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)

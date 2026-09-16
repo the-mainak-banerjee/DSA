@@ -55,6 +55,9 @@ function isPalindrome(head) {
     if (firstList.val !== secondList.val) {
       return false
     }
+
+    firstList = firstList.next;
+    secondList = secondList.next;
   }
 
   return true

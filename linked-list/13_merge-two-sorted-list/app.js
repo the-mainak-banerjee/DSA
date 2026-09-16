@@ -12,7 +12,7 @@ function mergeTwoLists(l1, l2) {
   let head = start
 
   while (l1 && l2) {
-    if (l1.next < l2.next) {
+    if (l1.val < l2.val) {
       start.next = l1;
       l1 = l1.next
     } else {

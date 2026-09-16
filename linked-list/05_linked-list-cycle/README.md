@@ -26,3 +26,10 @@ We will apply the same principle in our linked list.
     - If at some point `slow` and `fast` points to the same element then we can say our linked list has a cycle.
     - But if `fast` or `fast.next` points to `null` at some point, that means our linked list has no cycle. This is same as [Middle Of Linked List Problem](https://github.com/the-mainak-banerjee/DSA/tree/main/linked-list/middle-of-linked-list)
 - We also need to handle a corner case. If there is no head then we need to return false.
+
+
+
+### Leet Code reference
+
+- Problem Number 141
+- [Problem Link](https://leetcode.com/problems/linked-list-cycle/)
