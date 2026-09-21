@@ -1,39 +1,20 @@
-function numJewelsInStones(jewels, stones) {
-  let count = 0;
+function findWordsContaining(words, x) {
+  let result = [];
 
-  for (let i = 0; i < stones.length; i++){
-    for (let j = 0; j < jewels.length; j++){
-      if (jewels[j] === stones[i]) {
-        count++
-        break
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    for (let j = 0; j < word.length; j++) {
+      if (word[j] === x) {
+        result.push(i);
+        break;
       }
     }
   }
 
-  return count
+  return result;
 }
 
-
-function numJewelsInStonesOptimised(jewels, stones) {
-  let set = new Set()
-
-  for (let i = 0; i < jewels.length; i++){
-    set.add(jewels[i])
-  }
-
-  let count = 0;
-
-  for (let i = 0; i < stones.length; i++){
-    if (set.has(stones[i])) {
-      count++
-    }
-  }
-
-  return count
-}
-
-
-
-
-console.log("Brute force", numJewelsInStones("aA", "aaAAbbb"));
-console.log("Optimised", numJewelsInStonesOptimised("aA", "aaAAbbb"));
+console.log(
+  "Words are: [`leet`,`code`], 2",
+  findWordsContaining(["leet", "code"], "e"),
+);
