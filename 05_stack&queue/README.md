@@ -1,5 +1,9 @@
 # Stack and Queue
 
+## Important Points
+
+- Whenever there is a problem related to Parentheses try to solve it using stack.
+
 ## Stack
 
 A **Stack** is a linear data structure that follows the **LIFO (Last In, First Out)** principle.
