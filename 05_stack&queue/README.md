@@ -3,6 +3,7 @@
 ## Important Points
 
 - Whenever there is a problem related to Parentheses try to solve it using stack.
+- Whenever there is a next or greater element or next or previous smallest element, always there will be a solution using stack.
 
 ## Stack
 
